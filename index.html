@@ -5,12 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeHuB</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="Header"></div>
     <div class="Control-panel"></div>
+    <label for="languages">Select Language</label>
+    <select name="Language" id="languages" onchange="changelanguage()">
+        <option value="C">C</option>
+        <option value="C++">C++</option>
+        <option value="Java">Java</option>
+        <option value="Python">Python</option>
+    </select>
     <div class="Editor"></div>
-    <div class="Button-Container"></div>
+    <div class="Button-Container">
+        <button class="btn-run" onclick="runCode()">Run</button>
+    </div>
     <div class="Output"></div>
+    <script src="scripts/index.js"></script>
 </body>
 </html>
