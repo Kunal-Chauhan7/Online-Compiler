@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Header{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #f7cac9;
+    color: #92a8d1;
+}
+
+.Sub-title{
+    position: relative;
+    top: 5px;
+}
