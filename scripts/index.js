@@ -17,3 +17,17 @@ function changelanguage(){
         editor.session.setMode("ace/mode/java");
     }
 }
+
+function runCode(){
+    $.ajax({
+        url: "Online-Compiler/serve/complier.php",
+        method: "POST",
+        data:{
+            language: $("#languages").val(),
+            code: editor.getSession().getValue()
+        },
+        success: function(response) {
+            $(".output").text(response)
+        }
+    })
+}
