@@ -17,7 +17,14 @@
         </div>
     </div>
     <div class="Control-panel">
-        <div class="other-div">
+        <div class="Select-Theme">
+            <label for="Themes">Select Theme</label>
+            <select name="Themes" id="Themes" onchange="changeTheme()">
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+    </select>
         </div>
         <div class="Drop-down">
             <label for="languages">Select Language</label>
@@ -29,7 +36,7 @@
     </select>
         </div>
     </div>
-    <div class="Editor"></div>
+    <div class="Editor" id="Editor"></div>
     <div class="Button-Container">
         <button class="btn-run" onclick="runCode()">Run</button>
     </div>
